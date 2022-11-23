@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: 0.1rem;
+    font-size: 1.3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form {
+    margin-bottom: 3rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav-container {
+    background: linear-gradient(90deg, rgb(88, 172, 255), rgb(171, 230, 255));
+    width: 100%;
+    text-align: center;
+    padding: 1.8rem;
+    max-width: 85%;
+    margin: 0 auto;
+    font-size: 1.3rem;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-container h1 {
+    font-weight: 500;
+    letter-spacing: 0.01rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+    width: 80%;
+    margin: 0 auto;
+    letter-spacing: 0.01rem;
+}
+
+.total-guesses {
+    margin-top: 1.3rem;
+    margin-bottom: 2.5rem;
+    font-size: 1.7rem;
+    line-height: 1.5rem;
+}
+
+.total-guesses p:nth-child(1) {
+    font-weight: 500;
+}
+
+.total-guesses p:nth-child(2) {
+    font-size: 1.1rem;
+    margin-left: 0.5rem;
+}
+
+.form-label {
+    margin-bottom: 0.5rem;
+}
+
+.form-label label {
+    font-size: 1.3rem;
+    margin-left: 0.5rem;
+}
+
+.form-input {
+    display: flex;
+    align-items: center;
+}
+
+.form-input input[type="text"] {
+    font-size: 1.5rem;
+    width: 25%;
+    margin-right: 1rem;
+    border: 1px solid black;
+    min-width: 286px;
+    padding: 0.6rem;
+}
+
+.form-input input[type="submit"] {
+    font-size: 1.3rem;
+    padding: 0.7rem;
+    background-color: #FFF;
+    border: 1px solid black;
+    width: 10%;
+    min-width: 115px;
+    cursor: pointer;
+    transition: 0.1s ease-out;
+}
+
+.form-input input[type="submit"]:hover {
+    background-color: rgb(88, 172, 255);
+    color: #fff;
+    border: none;
+}
+
+.guesses p {
+    margin-bottom: 0.3rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.guesses-list {
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.guesses-list li {
+    font-size: 1.7rem;
+    line-height: 2rem;
+}
+
+li::marker {
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 519px) {
+    body {
+        text-align: center;
+    }
+
+    .nav-container {
+        max-width: 90%;
+    }
+
+    .form-input {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .form-input input[type="text"] {
+        margin: 0;
+    }
 }
