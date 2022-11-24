@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/name-age-guesser/static/css/main.a051a6ff.css",
+    "main.js": "/name-age-guesser/static/js/main.c0de035b.js",
+    "index.html": "/name-age-guesser/index.html",
+    "main.a051a6ff.css.map": "/name-age-guesser/static/css/main.a051a6ff.css.map",
+    "main.c0de035b.js.map": "/name-age-guesser/static/js/main.c0de035b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a051a6ff.css",
+    "static/js/main.c0de035b.js"
+  ]
+}
